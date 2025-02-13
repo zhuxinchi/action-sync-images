@@ -23,9 +23,12 @@ jobs:
         with:
           node-version: '14'
       # 运行一段shell命令或者Shell脚本
-      - run: npm install -g bats
-      - run: bats -v
+      # - run: npm install -g bats
+      # - run: bats -v
       - run: |
           #!/usr/bin/env bash
-          echo -e "Hello, Github Actions!\Author: WeiyiGeek\nBlog: https://blog.weiyigeek.top" 
-          whoami && uname -a && ip addr
+          echo -e "Hello, Github Actions! zhuxinchi" 
+          systemctl status docker
+          docker images
+          docker pull registry.k8s.io/pause:3.9
+          docker images
