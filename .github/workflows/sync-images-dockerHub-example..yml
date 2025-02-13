@@ -33,5 +33,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://registry.k8s.io/kube-apiserver:v1.28.2 docker://jackylove4docker/kube-apiserver:v1.28.2
+        skopeo copy docker://registry.k8s.io/kube-apiserver:v1.28.2 docker://docker.io/jackylove4docker/kube-apiserver:v1.28.2
  
